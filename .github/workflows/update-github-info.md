@@ -24,16 +24,16 @@ safe-outputs:
       - site/content/github-info.md
 ---
 
-Read `notes/mona-notes.md` and `site/content/github-info.md` first. Use the
-web-fetch tool to fetch each source URL directly:
+Read `notes/mona-notes.md` and `site/content/github-info.md` first. For each
+source URL below, call the `web_fetch` tool directly with the URL:
 
 - https://github.blog/latest/
 - https://github.blog/changelog/
 - https://awesome-copilot.github.com/workflows/
 
-Do not use shell, `curl`, `wget`, or another tool to fetch these pages. If
-web-fetch cannot read a source, do not retry with shell; continue only with
-sources web-fetch can read.
+Do not type `web-fetch` as a shell command, use `curl` or `wget`, or redirect
+tool output through shell. If the `web_fetch` tool call fails or is unavailable,
+do not retry with shell; continue only with sources the tool can read.
 
 Identify recent updates that are useful to developers and fit Mona's practical
 editorial angle. Update only `site/content/github-info.md`, keeping the content
