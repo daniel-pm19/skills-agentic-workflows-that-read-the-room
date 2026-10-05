@@ -14,6 +14,7 @@ network:
   allowed:
     - github.blog
     - github.com
+    - awesome-copilot.github.com
 safe-outputs:
   create-pull-request:
     max: 1
@@ -27,6 +28,7 @@ web-fetch tool to read:
 
 - https://github.blog/latest/
 - https://github.blog/changelog/
+- https://awesome-copilot.github.com/workflows/
 
 Identify recent updates that are useful to developers and fit Mona's practical
 editorial angle. Update only `site/content/github-info.md`, keeping the content
