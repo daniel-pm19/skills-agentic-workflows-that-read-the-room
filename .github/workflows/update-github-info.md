@@ -7,6 +7,7 @@ on:
 permissions:
   contents: read
   pull-requests: read
+model: gpt-4.1
 tools:
   edit: true
   web-fetch: {}
