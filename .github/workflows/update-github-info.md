@@ -24,18 +24,23 @@ safe-outputs:
       - site/content/github-info.md
 ---
 
-Read `notes/mona-notes.md` and `site/content/github-info.md` first. Then use the
-web-fetch tool to read:
+Read `notes/mona-notes.md` and `site/content/github-info.md` first. Use the
+web-fetch tool to fetch each source URL directly:
 
 - https://github.blog/latest/
 - https://github.blog/changelog/
 - https://awesome-copilot.github.com/workflows/
 
+Do not use shell, `curl`, `wget`, or another tool to fetch these pages. If
+web-fetch cannot read a source, do not retry with shell; continue only with
+sources web-fetch can read.
+
 Identify recent updates that are useful to developers and fit Mona's practical
 editorial angle. Update only `site/content/github-info.md`, keeping the content
 short and practical. Cite the relevant GitHub Blog or Changelog page directly
-for each sourced update. Do not add claims that are not supported by the source
-pages, and do not make an empty or speculative change.
+or Awesome Copilot workflows page for each sourced update. Do not add claims
+that are not supported by the source pages, and do not make an empty or
+speculative change.
 
 Open one pull request for Mona to review, summarizing the update and linking its
 sources in the pull request description. Do not push changes directly to the
